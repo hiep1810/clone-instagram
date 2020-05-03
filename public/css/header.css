@@ -1,5 +1,7 @@
 .header {
-  max-width: 80%;
-  background-color: #eee;
-  overflow: hidden;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5% 0 5%;
+  padding-bottom: 0;
+  background-color: #fff;
 }
