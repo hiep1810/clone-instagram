@@ -1,0 +1,9 @@
+.init {
+  font-size: 15px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #aaa;
+
+  font-family: Helvetica, Geneva, Verdana, sans-serif;
+}
