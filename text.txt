@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    input {
+      height: 10px;
+      width: 200px;
+    }
+    input::placeholder {
+      color: #ddd;
+    }
+  </style>
+  <body
+    style="
+      font-size: 15px;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      background-color: #aaa;
+
+      font-family: Helvetica, Geneva, Verdana, sans-serif;
+    "
+  >
+    <div style="max-width: 80%; background-color: #eee; overflow: hidden;">
+      <div
+        style="
+          display: flex;
+          border-bottom: 1px solid #ccc;
+          padding: 10px 5% 0 5%;
+          padding-bottom: 0;
+          background-color: #fff;
+        "
+      >
+        <div style="flex: 2;">
+          <img
+            style="padding-right: 10px;"
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+          />
+        </div>
+        <div style="flex: 6; display: flex; justify-content: center;">
+          <div style="position: relative; margin-right: 15px;">
+            <i
+              class="fa fa-search"
+              style="
+                color: #ccc;
+                font-size: 13px;
+                position: absolute;
+                left: 65px;
+                top: 3px;
+              "
+            ></i>
+            <input
+              type="text"
+              style="
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                padding: 5px;
+                text-align: center;
+              "
+              placeholder="Tìm kiếm"
+            />
+          </div>
+        </div>
+        <div style="flex: 3; display: flex;">
+          <svg
+            style="margin-right: 15px;"
+            aria-label="Trang chủ"
+            class="_8-yf5"
+            fill="#262626"
+            height="22"
+            viewBox="0 0 48 48"
+            width="22"
+          >
+            <path
+              d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"
+            ></path>
+          </svg>
+          <svg
+            style="margin-right: 15px;"
+            aria-label="Direct"
+            class="_8-yf5"
+            fill="#262626"
+            height="22"
+            viewBox="0 0 48 48"
+            width="22"
+          >
+            <path
+              d="M46.5 3.5h-45C.6 3.5.2 4.6.8 5.2l16 15.8 5.5 22.8c.2.9 1.4 1 1.8.3L47.4 5c.4-.7-.1-1.5-.9-1.5zm-40.1 3h33.5L19.1 18c-.4.2-.9.1-1.2-.2L6.4 6.5zm17.7 31.8l-4-16.6c-.1-.4.1-.9.5-1.1L41.5 9 24.1 38.3z"
+            ></path>
+            <path d="M14.7 48.4l2.9-.7"></path>
+          </svg>
+          <svg
+            style="margin-right: 15px;"
+            aria-label="Tìm người"
+            class="_8-yf5"
+            fill="#262626"
+            height="22"
+            viewBox="0 0 48 48"
+            width="22"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M24 .5C37 .5 47.5 11 47.5 24S37 47.5 24 47.5.5 37 .5 24 11 .5 24 .5zm0 44c11.3 0 20.5-9.2 20.5-20.5S35.3 3.5 24 3.5 3.5 12.7 3.5 24 12.7 44.5 24 44.5zm-4.4-23.7c.3-.5.7-.9 1.2-1.2l14.8-8.1c.3-.1.6-.1.8.1.2.2.3.5.1.8l-8.1 14.8c-.3.5-.7.9-1.2 1.2l-14.8 8.1c-.3.1-.6.1-.8-.1-.2-.2-.3-.5-.1-.8l8.1-14.8zm6.2 5l4.3-7.8-7.8 4.3 3.5 3.5z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            aria-label="Nguồn cấp dữ liệu hoạt động"
+            style="margin-right: 15px;"
+            class="_8-yf5"
+            fill="#262626"
+            height="22"
+            viewBox="0 0 48 48"
+            width="22"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M34.3 3.5C27.2 3.5 24 8.8 24 8.8s-3.2-5.3-10.3-5.3C6.4 3.5.5 9.9.5 17.8s6.1 12.4 12.2 17.8c9.2 8.2 9.8 8.9 11.3 8.9s2.1-.7 11.3-8.9c6.2-5.5 12.2-10 12.2-17.8 0-7.9-5.9-14.3-13.2-14.3zm-1 29.8c-5.4 4.8-8.3 7.5-9.3 8.1-1-.7-4.6-3.9-9.3-8.1-5.5-4.9-11.2-9-11.2-15.6 0-6.2 4.6-11.3 10.2-11.3 4.1 0 6.3 2 7.9 4.2 3.6 5.1 1.2 5.1 4.8 0 1.6-2.2 3.8-4.2 7.9-4.2 5.6 0 10.2 5.1 10.2 11.3 0 6.7-5.7 10.8-11.2 15.6z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+          <div style="display: flex; justify-content: center;">
+            <img
+              src="https://picsum.photos/id/12/30/30"
+              width="20"
+              height="20"
+              style="border-radius: 1000px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          padding: 10px;
+          margin: 0 15% 20px 15%;
+          display: flex;
+          flex-direction: row;
+          border: 1px solid #ccc;
+          border-top: 0;
+          overflow: hidden;
+        "
+      >
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/12/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_1
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/13/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_2
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/14/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_3
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/15/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_4
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/16/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_5
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/17/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_6
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/18/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_7
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/19/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_8
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/20/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_9
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/21/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_10
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/21/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_10
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/22/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_11
+            </span>
+          </div>
+        </div>
+        <div style="margin: 10px; margin-right: 2%;">
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/23/50/50"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <div style="text-align: center; font-size: 11px; margin-top: 5px;">
+            <span>
+              instar_12
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- content 1 -->
+      <div
+        style="
+          border: 1px solid #ccc;
+          margin: 20px 15% 0 15%;
+          background-color: #fff;
+        "
+      >
+        <!-- content header -->
+        <div
+          style="
+            margin: 10px;
+            margin-right: 2%;
+            display: flex;
+            flex-direction: row;
+          "
+        >
+          <!-- header avatar -->
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 35px;
+              height: 35px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/4/35/35"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <!-- header title -->
+          <div
+            style="flex: 1; display: flex; align-items: center; margin: 10px;"
+          >
+            m.model.1
+          </div>
+          <!-- header menu button-->
+          <div
+            style="
+              flex: 1;
+              display: flex;
+              align-items: center;
+
+              justify-content: flex-end;
+            "
+          >
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!--main image -->
+        <div style="width: 100%;">
+          <img
+            src="https://picsum.photos/id/5/1000/1000"
+            style="max-width: 100%;"
+          />
+        </div>
+        <!-- iconbar -->
+        <div>
+          <div style="display: flex; position: relative;">
+            <!-- button here-->
+            <div
+              style="
+                padding: 10px;
+                display: flex;
+
+                width: 100%;
+              "
+            >
+              <!-- button-->
+              <div style="flex: 1; display: flex; flex-direction: row;">
+                <!-- love -->
+                <svg
+                  style="margin: 0px 10px 0px 0px;"
+                  aria-label="Thích"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M34.3 3.5C27.2 3.5 24 8.8 24 8.8s-3.2-5.3-10.3-5.3C6.4 3.5.5 9.9.5 17.8s6.1 12.4 12.2 17.8c9.2 8.2 9.8 8.9 11.3 8.9s2.1-.7 11.3-8.9c6.2-5.5 12.2-10 12.2-17.8 0-7.9-5.9-14.3-13.2-14.3zm-1 29.8c-5.4 4.8-8.3 7.5-9.3 8.1-1-.7-4.6-3.9-9.3-8.1-5.5-4.9-11.2-9-11.2-15.6 0-6.2 4.6-11.3 10.2-11.3 4.1 0 6.3 2 7.9 4.2 3.6 5.1 1.2 5.1 4.8 0 1.6-2.2 3.8-4.2 7.9-4.2 5.6 0 10.2 5.1 10.2 11.3 0 6.7-5.7 10.8-11.2 15.6z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                <!-- comment -->
+                <svg
+                  style="margin: 0px 10px 0px 0px;"
+                  aria-label="Bình luận"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                <!-- send -->
+                <svg
+                  style="margin: 0px 10px 0px 0px;"
+                  aria-label="Chia sẻ bài viết"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    d="M46.5 3.5h-45C.6 3.5.2 4.6.8 5.2l16 15.8 5.5 22.8c.2.9 1.4 1 1.8.3L47.4 5c.4-.7-.1-1.5-.9-1.5zm-40.1 3h33.5L19.1 18c-.4.2-.9.1-1.2-.2L6.4 6.5zm17.7 31.8l-4-16.6c-.1-.4.1-.9.5-1.1L41.5 9 24.1 38.3z"
+                  ></path>
+                  <path d="M14.7 48.4l2.9-.7"></path>
+                </svg>
+              </div>
+              <div style="flex: 1; display: flex; justify-content: flex-end;">
+                <svg
+                  aria-label="Lưu"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <!-- 3 dots -->
+            <div
+              style="
+                position: absolute;
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                top: 10px;
+                width: 100%;
+              "
+            >
+              <div
+                style="
+                  margin: 5px;
+                  border-radius: 1000px;
+
+                  width: 5px;
+                  height: 5px;
+                  background-color: rgb(0, 125, 197);
+                "
+              ></div>
+              <div
+                style="
+                  margin: 5px;
+                  border-radius: 1000px;
+                  width: 5px;
+                  height: 5px;
+                  background-color: #aaa;
+                "
+              ></div>
+              <div
+                style="
+                  margin: 5px;
+                  border-radius: 1000px;
+                  width: 5px;
+                  height: 5px;
+                  background-color: #aaa;
+                "
+              ></div>
+            </div>
+          </div>
+          <!--comment -->
+          <div>
+            <p style="margin: 5px 10px 5px 10px;">30,607 lượt xem</p>
+            <p style="color: #888; margin: 5px 10px 5px 10px;">
+              Xem tất cả 128 bình luận
+            </p>
+            <p style="margin: 5px 10px 5px 10px;">lion_eat_carrot ❤️</p>
+            <p
+              style="margin: 10px 10px 10px 10px; color: #888; font-size: 10px;"
+            >
+              9 GIỜ TRƯỚC
+            </p>
+          </div>
+          <div
+            style="
+              padding: 20px;
+              border-top: 1px solid #eee;
+              display: flex;
+              flex-direction: row;
+            "
+          >
+            <input
+              type="text"
+              placeholder="Thêm bình luận..."
+              style="border: 0; padding: 5px; flex: 10;"
+            />
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: rgb(80, 201, 248);
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+              "
+              >Đăng</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- content 2 -->
+      <div
+        style="
+          border: 1px solid #ccc;
+          margin: 20px 15% 0 15%;
+          background-color: #fff;
+        "
+      >
+        <!-- content header -->
+        <div
+          style="
+            margin: 10px;
+            margin-right: 2%;
+            display: flex;
+            flex-direction: row;
+          "
+        >
+          <!-- header avatar -->
+          <div
+            style="
+              padding: 1rem;
+              border-radius: 1000px;
+              width: 35px;
+              height: 35px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: linear-gradient(
+                8deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(230, 182, 8, 1) 0%,
+                rgba(255, 0, 0, 1) 100%
+              );
+              padding: 4px;
+            "
+          >
+            <img
+              src="https://picsum.photos/id/9/35/35"
+              style="border-radius: 1000px; padding: 2px; background: #eee;"
+            />
+          </div>
+          <!-- header title -->
+          <div
+            style="flex: 1; display: flex; align-items: center; margin: 10px;"
+          >
+            pc.holic
+          </div>
+          <!-- header menu button-->
+          <div
+            style="
+              flex: 1;
+              display: flex;
+              align-items: center;
+
+              justify-content: flex-end;
+            "
+          >
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!--main image -->
+        <div style="width: 100%;">
+          <img
+            src="https://picsum.photos/id/19/1000/1000"
+            style="max-width: 100%;"
+          />
+        </div>
+        <!-- iconbar -->
+        <div>
+          <div style="display: flex; position: relative;">
+            <!-- button here-->
+            <div
+              style="
+                padding: 10px;
+                display: flex;
+
+                width: 100%;
+              "
+            >
+              <!-- button-->
+              <div style="flex: 1; display: flex; flex-direction: row;">
+                <!-- love -->
+                <svg
+                  style="margin: 0px 10px 0px 0px;"
+                  aria-label="Thích"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M34.3 3.5C27.2 3.5 24 8.8 24 8.8s-3.2-5.3-10.3-5.3C6.4 3.5.5 9.9.5 17.8s6.1 12.4 12.2 17.8c9.2 8.2 9.8 8.9 11.3 8.9s2.1-.7 11.3-8.9c6.2-5.5 12.2-10 12.2-17.8 0-7.9-5.9-14.3-13.2-14.3zm-1 29.8c-5.4 4.8-8.3 7.5-9.3 8.1-1-.7-4.6-3.9-9.3-8.1-5.5-4.9-11.2-9-11.2-15.6 0-6.2 4.6-11.3 10.2-11.3 4.1 0 6.3 2 7.9 4.2 3.6 5.1 1.2 5.1 4.8 0 1.6-2.2 3.8-4.2 7.9-4.2 5.6 0 10.2 5.1 10.2 11.3 0 6.7-5.7 10.8-11.2 15.6z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                <!-- comment -->
+                <svg
+                  style="margin: 0px 10px 0px 0px;"
+                  aria-label="Bình luận"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                <!-- send -->
+                <svg
+                  style="margin: 0px 10px 0px 0px;"
+                  aria-label="Chia sẻ bài viết"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    d="M46.5 3.5h-45C.6 3.5.2 4.6.8 5.2l16 15.8 5.5 22.8c.2.9 1.4 1 1.8.3L47.4 5c.4-.7-.1-1.5-.9-1.5zm-40.1 3h33.5L19.1 18c-.4.2-.9.1-1.2-.2L6.4 6.5zm17.7 31.8l-4-16.6c-.1-.4.1-.9.5-1.1L41.5 9 24.1 38.3z"
+                  ></path>
+                  <path d="M14.7 48.4l2.9-.7"></path>
+                </svg>
+              </div>
+              <div style="flex: 1; display: flex; justify-content: flex-end;">
+                <svg
+                  aria-label="Lưu"
+                  class="_8-yf5"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <!-- 3 dots -->
+            <div
+              style="
+                position: absolute;
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                top: 10px;
+                width: 100%;
+              "
+            >
+              <div
+                style="
+                  margin: 5px;
+                  border-radius: 1000px;
+
+                  width: 5px;
+                  height: 5px;
+                  background-color: rgb(0, 125, 197);
+                "
+              ></div>
+              <div
+                style="
+                  margin: 5px;
+                  border-radius: 1000px;
+                  width: 5px;
+                  height: 5px;
+                  background-color: #aaa;
+                "
+              ></div>
+              <div
+                style="
+                  margin: 5px;
+                  border-radius: 1000px;
+                  width: 5px;
+                  height: 5px;
+                  background-color: #aaa;
+                "
+              ></div>
+            </div>
+          </div>
+          <!--comment -->
+          <div>
+            <p style="margin: 5px 10px 5px 10px;">30,607 lượt xem</p>
+            <p style="color: #888; margin: 5px 10px 5px 10px;">
+              Xem tất cả 128 bình luận
+            </p>
+            <p style="margin: 5px 10px 5px 10px;">lion_eat_carrot ❤️</p>
+            <p
+              style="margin: 10px 10px 10px 10px; color: #888; font-size: 10px;"
+            >
+              9 GIỜ TRƯỚC
+            </p>
+          </div>
+          <div
+            style="
+              padding: 20px;
+              border-top: 1px solid #eee;
+              display: flex;
+              flex-direction: row;
+            "
+          >
+            <input
+              type="text"
+              placeholder="Thêm bình luận..."
+              style="border: 0; padding: 5px; flex: 10;"
+            />
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: rgb(80, 201, 248);
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+              "
+              >Đăng</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
